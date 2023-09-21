@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&T</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo" onclick="location.href='./Home.html'">M&T</div>
+        <div class="header-menu">
+            <button onclick="location.href='./Clothes.html' ">Clothes</button>
+            <button onclick="location.href='./Locations.html' ">Locations</button>
+            <button onclick="location.href='./About Us.html' ">About Us</button>
+            <button onclick="location.href='./Subscribe.html' ">Subscribe</button>
+        </div>
+    </div>
+    <div class="content-subscribe">
+        <form id="subscription">
+            <p id="error" style="color:red"></p>
+            <div class="field">
+                <label for="name">Username</label>
+                <input type="text" placeholder=" UserName" name="name" id="name">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" placeholder=" Email" name="email" id="email">
+            </div>
+            <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="text" placeholder=" Phone Number" name="phone" id="phone"> 
+            </div>
+            <div class="field">
+                <label for="country">Country</label>
+                <input type="text" placeholder=" Country" name="country" id="country">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="agreements" id="agreements"><a href="https://www.lipsum.com/">Terms & Conditions</a>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+</body>
+<script src="subs.js"></script>
+</html>

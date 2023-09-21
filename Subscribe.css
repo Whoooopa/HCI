@@ -1,0 +1,147 @@
+
+.content-subscribe{
+    display: grid;
+    grid-template-rows: 7.5% 85% 7.5%;
+    grid-template-columns: 20% 60% 20%;
+    min-height: 50em;
+}
+
+@media screen and (max-width:800px) {
+    .content-subscribe{
+        display: grid;
+        grid-template-rows: 2% 88% 10%;
+        grid-template-columns: 5% 90% 5%;
+        min-height: 10em;
+        height: auto;
+    }
+}
+   
+#subscription{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #4D4C7D;
+    row-gap: 10%;
+    min-width: 35em;
+    margin-top: 1em;
+    padding-top: 1em;
+    
+}
+
+@media screen and (max-width:800px) {
+    #subscription{
+        justify-content: flex-start;
+        min-width: 10em;
+    }
+}
+
+.field input{
+    /* margin: 1em 0 0em 0; */
+    height: 150%;
+    width: 80%;
+    min-width: 10em;
+}
+
+.field{
+    display: flex;
+    color: #cfcfcf;
+    font-weight: 500;
+    font-size: medium;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 30% 50% 10%;
+}
+
+@media screen and (max-width:800px) {
+    .field{
+        font-weight: 500;
+        font-size: small;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 5% 40% 50% 5%;
+    }
+}
+
+#subscription label{
+    display: grid;
+    grid-column: 2;
+    justify-self:flex-start;
+}
+
+.check{
+    display: grid;
+    grid-template-columns: 33% 10% 30% 27%;
+}
+
+@media screen and (max-width:800px) {
+    .check{
+        display: grid;
+        grid-template-columns: 45% 5% 45% 5%;
+    }
+}
+
+#agreements{
+    display: grid;
+    grid-column: 2;
+    height: 80%;
+    width: 30%;
+    min-width: 1em;
+    justify-self:right;
+}
+
+#subscription a{
+    color: #cfcfcf;
+    font-weight: 500;
+    justify-self: left;
+}
+
+@media screen and (max-width:800px) {
+    #subscription a{
+        font-size: small;
+    }
+}
+
+#subscription button{
+
+    align-self: center;
+
+    font-weight: 600; 
+    color: #cfcfcf;
+
+    height: 8%;
+    width: 20%;
+    min-width: 1em;
+    min-height: 1em;
+
+    font-size:14px;
+
+    background-color: #827397;
+    box-shadow: 2px 2px #625377;
+    border-radius: 10px;
+    border: none;
+    margin: 0 0 1em 0;
+
+}
+
+@media screen and (max-width:800px) {
+    #subscription button{
+
+        height: 5%;
+        min-width: 5em;
+        min-height: 2em;
+    
+    
+    }
+}
+
+#subscription button:hover{
+
+    cursor: pointer;
+    background-color: #625377;
+    transform: translate(0.1rem, 0.1rem);
+    box-shadow: -2px -2px #423357;
+}

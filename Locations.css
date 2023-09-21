@@ -1,0 +1,72 @@
+/* -----Locations----- */
+
+.content-locations{
+
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: 8% 87% 5%;
+    grid-template-columns: 6% 88% 6%;
+}
+
+.locations{
+
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    grid-template-rows: repeat(2,50%);
+    grid-template-columns: repeat(2,50%);
+    justify-items: center;
+    align-items: center;
+    row-gap: 0.2em;
+    background-color: #4D4C7D;
+}
+
+.country{
+    display: grid;
+    width: 95%;
+    height: 92%;
+    grid-template-rows: 30% repeat(3,15%) 25%;
+    grid-template-columns: 10% 90%;
+    row-gap: 1em;
+}
+
+@media screen and (max-width:800px) {
+    .country{
+        grid-template-rows: 15% repeat(3,20%) 25%;
+        row-gap: 1em;
+    }
+}
+
+.country label{
+    display: grid;
+    grid-column: 2;
+    margin-top: 0.5em;
+
+    
+    font-weight: 500;
+    font-size: x-large;
+    color: #efefef;
+}
+
+.address{
+
+    height: 20%;
+    width: 80%;
+    color: #dfdfdf;
+    display: grid;
+    grid-column: 2;
+
+    font-weight: 400;
+    font-size:110%;
+
+    margin: 1em 0 1em 0;
+
+}
+
+@media screen and (max-width:800px) {
+    .address{
+        font-size:75%;
+        margin: 1em 0 1em 0;
+        
+    }
+}
